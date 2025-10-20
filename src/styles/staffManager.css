@@ -1,6 +1,7 @@
 /* 전체 컨테이너 */
 .main-content {
-  padding-top: 80px;
+  padding-top: 0 !important; /* 🔹 상단 공백 완전 제거 */
+  margin-top: 0 !important; /* 🔹 혹시 margin이 남아있을 수도 있으니 0으로 */
   background: #fff;
   font-family: "Pretendard", sans-serif;
   color: #111827;
@@ -9,15 +10,16 @@
 
 /* 광고 배너 영역 */
 .top-ad-banner {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-  padding: 40px 0;
+  gap: 40px;
+  padding: 10px 0 30px; /* 🔹 위쪽 여백 10px로 줄임 */
   background: #f9fafb;
   border-bottom: 1px solid #f3f4f6;
 }
-
 .top-ad-banner a {
   display: flex;
   justify-content: center;
@@ -25,8 +27,8 @@
 }
 
 .top-ad-banner a img {
-  width: 420px;
-  height: 160px;
+  width: 900px;
+  height: 70px;
   object-fit: contain;
   border-radius: 12px;
   background-color: white;
@@ -58,7 +60,7 @@
 .search-bar {
   position: sticky;
   top: 64px;
-  z-index: 30;
+  z-index: 5;
   background: white;
   display: flex;
   align-items: center;
@@ -143,7 +145,7 @@
   background: #f3f4f6;
   position: sticky;
   top: 116px; /* 네비게이션(64px) + 검색창(52px) */
-  z-index: 30;
+  z-index: 5;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
